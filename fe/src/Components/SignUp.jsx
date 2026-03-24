@@ -5,13 +5,13 @@ function SignUp() {
     <>
       <form>
         <h3>Create an Account</h3>
-        <input />
+        <input type="text" placeholder="Full Name" />
         <br />
-        <input />
+        <input type="text" placeholder="Email Address" />
         <br />
-        <input />
+        <input type="password" placeholder="Password" />
         <br />
-        <input />
+        <input type="password" placeholder="Confirm Password" />
         <br />
         <button>Sign Up</button>
         <br />
