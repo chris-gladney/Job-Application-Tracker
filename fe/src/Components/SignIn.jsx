@@ -5,9 +5,12 @@ function SignIn() {
     <>
       <form>
         <h3>Login</h3>
-        <input />
+        <input type="text" placeholder="Email Address" />
         <br />
-        <input />
+        <input type="password" placeholder="Password" />
+        <br />
+        <input type="checkbox" name="remember-me" id="remember-me" />
+        <label htmlFor="remember-me">Remember me</label>
         <br />
         <button>Login</button>
         <br />
