@@ -13,7 +13,7 @@ function SignUp() {
         <br />
         <input type="password" placeholder="Confirm Password" />
         <br />
-        <button>Sign Up</button>
+        <button className="orange-button">Sign Up</button>
         <br />
         <p>
           Already have an account? <Link to="/">Sign In</Link>
