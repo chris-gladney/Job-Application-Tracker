@@ -10,7 +10,7 @@
   background-color: rgb(230, 230, 230);
 }
 
-.sign-in {
+form {
   background-color: white;
   border: solid rgba(128, 128, 128, 0.317) 1px;
   width: 500px;
@@ -38,7 +38,8 @@ form button {
   border-radius: 5px;
   font-size: 17px;
   font-weight: bold;
-  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.482);;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.482);
+  cursor: pointer;
 }
 
 form input[type="text"], form input[type="email"], form input[type="password"] {
