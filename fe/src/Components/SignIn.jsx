@@ -9,12 +9,13 @@ function SignIn() {
         <br />
         <input type="password" placeholder="Password" />
         <br />
-        <input type="checkbox" name="remember-me" id="remember-me" />
-        <label htmlFor="remember-me">Remember me</label>
+        <div className="checked">
+          <input type="checkbox" name="remember-me" id="remember-me" />
+          <label htmlFor="remember-me">Remember me</label>
+        </div>
+        <button className="orange-button">Login</button>
         <br />
-        <button>Login</button>
-        <br />
-        <button>Forgot Password?</button>
+        <button className="forgot-password">Forgot Password?</button>
         <br />
         <p>
           Don't have an account? <Link to="/register">Sign Up</Link>
