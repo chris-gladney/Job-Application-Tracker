@@ -24,15 +24,15 @@ form {
 form h3 {
   margin: 20px auto;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: bold;
   line-height: 32px;
 }
 
-form button, form input {
+form button, form input, form select, textarea {
   width: 85%;
 }
 
-form button {
+form button, .job-settings button {
   margin: 10px auto;
   height: 50px;
   border-radius: 5px;
@@ -42,7 +42,7 @@ form button {
   cursor: pointer;
 }
 
-form input[type="text"], form input[type="email"], form input[type="password"] {
+form input[type="text"], form input[type="email"], form input[type="password"], form input[type="date"], form select, textarea {
   margin: 10px auto;
   height: 40px;
   background-color: white;
@@ -52,6 +52,10 @@ form input[type="text"], form input[type="email"], form input[type="password"] {
   border: solid rgba(128, 128, 128, 0.596) 1px;
   padding-left: 10px;
   box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.482);
+}  
+
+form textarea {
+  height: 200px;
 }
 
 .checked {
@@ -63,7 +67,7 @@ form input[type="text"], form input[type="email"], form input[type="password"] {
   width: 85%;
 }
 
-form input[type="checkbox"] {
+form input[type="checkbox"], form select {
   background-color: white;
 }
 
@@ -101,6 +105,11 @@ form input[type="checkbox"] {
   background-color: white;
 }
 
+.cancel {
+  background-color: rgb(233, 233, 233);
+  color: black;
+}
+
 form p {
   margin: 20px 0;
 }
@@ -109,4 +118,15 @@ form p a {
   color: blue;
   font-weight: bold;
   text-decoration: none;
+}
+
+.job-settings {
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  margin: 20px auto;
+}
+
+.job-settings button {
+  margin: 5px;
 }
