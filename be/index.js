@@ -1,13 +1,13 @@
 import express from "express";
-import { default as connectDB } from "./db/connection.js";
-const app = express();
+import connectDB from "./db/connection.js";
 import dotenv from "dotenv";
 dotenv.config();
+
+const app = express();
 
 const port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  console.log(port);
   res.send("Hello World!");
 });
 
