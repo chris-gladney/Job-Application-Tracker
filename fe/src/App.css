@@ -48,6 +48,7 @@ form input[type="text"], form input[type="email"], form input[type="password"], 
   background-color: white;
   color: black;
   font-size: 17px;
+  font-family: inherit;
   border-radius: 4px;
   border: solid rgba(128, 128, 128, 0.596) 1px;
   padding-left: 10px;
@@ -56,6 +57,7 @@ form input[type="text"], form input[type="email"], form input[type="password"], 
 
 form textarea {
   height: 200px;
+  resize: none;
 }
 
 .checked {
@@ -129,4 +131,20 @@ form p a {
 
 .job-settings button {
   margin: 5px;
+}
+
+.main-page {
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: black;
+  margin: 20px auto 20px 40px;
+  font-weight: bold;
+}
+
+.job-info {
+  width: 100%;
 }
