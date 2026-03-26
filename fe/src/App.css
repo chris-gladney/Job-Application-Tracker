@@ -139,6 +139,7 @@ form p a {
   flex-direction: column;
   width: 65%;
   margin: auto;
+  background-color: white;
 }
 
 h2 {
@@ -156,7 +157,6 @@ h2 {
 }
 
 .info-block {
-  background-color: blue;
   margin: 0 10px;
   width: 250px;
   height: 60px;
@@ -182,14 +182,85 @@ h2 {
 }
 
 .jobs-applied-stats {
-  margin: 0 auto;
-  min-width: 1000px;
+  margin: 20px auto;
+  min-width: 1100px;
+  display: flex;
+  flex-direction: row;
+  max-height: 500px;
+}
+
+.bar-chart-container {
+  width: 50%;
+  min-height: 400px; 
+  margin: 20px 10px 10px 0;
+}
+
+.search-applications {
+  margin: 20px;
+  width: 50%;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-left: auto;
+  justify-content: right;
+}
+
+.search-bar input {
+  height: 30px;
+  margin: auto 5px; 
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 10px;
+  color: black;
+}
+
+.search-bar svg {
+  margin: auto 5px;
+}
+
+.current-applications {
+  margin-top: 20px;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.job-overview {
   display: flex;
   flex-direction: row;
 }
 
-.bar-chart-container {
-  width: 60%;
-  min-height: 400px; 
-  margin: 20px 10px 10px 0;
+.job-overview > * {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.job-overview h5 {
+  width: 300px;
+}
+
+.job-status {
+  margin: auto 10px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.365);
+  border-radius: 5px;
+}
+
+.job-status p {
+  margin: auto;
+}
+
+.job-status a {
+  margin: auto 10px;
 }
