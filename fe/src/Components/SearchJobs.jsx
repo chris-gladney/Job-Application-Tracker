@@ -72,7 +72,7 @@ function SearchJobs() {
     <div className="search-applications">
       <div className="search-bar">
         <Link to="/add-job">
-          <button className="add-job">+ Job</button>
+          <button className="add-job">+</button>
         </Link>
         <div className="search-bar-wrapper">
           <FontAwesomeIcon icon={faMagnifyingGlass} />
