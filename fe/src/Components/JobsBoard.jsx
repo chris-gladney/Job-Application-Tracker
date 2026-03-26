@@ -9,6 +9,7 @@ import {
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
 import SearchJobs from "./SearchJobs";
+import Banner from "./Banner";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
@@ -51,8 +52,8 @@ const options = {
 function JobsBoard() {
   return (
     <>
-      {/* Banner */}
       <section className="main-page">
+        <Banner />
         <h2>Welcome Back!</h2>
         <div className="job-info">
           {testData.map((block, i) => {
