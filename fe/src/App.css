@@ -137,6 +137,8 @@ form p a {
   height: 100vh;
   display:flex;
   flex-direction: column;
+  width: 85%;
+  margin: auto;
 }
 
 h2 {
@@ -155,13 +157,25 @@ h2 {
 .info-block {
   background-color: blue;
   margin: 0 10px;
-  width: 300px;
+  width: 250px;
   height: 60px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  box-shadow: 5px 3px 3px rgba(0, 0, 0, 0.365);
+  border-radius: 5px;
 }
 
 .info-block p {
   margin: 10px auto;
+  color: white;
+}
+
+.job-type {
+  font-size: 16px;
+}
+
+.job-number {
+  font-size: 30px;
+  font-weight: 600;
 }

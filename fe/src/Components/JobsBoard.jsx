@@ -1,10 +1,10 @@
 import InfoBlock from "./InfoBlock";
 
 const testData = [
-  { text: "Total Applications", number: 24, color: "#ADD8E6" },
-  { text: "Interviews", number: 5, color: "#00ffff" },
-  { text: "Offers", number: 2, color: "#f19113" },
-  { text: "Rejected", number: 8, color: "#fc2424" },
+  { text: "Total Applications", number: 24, color: "#3d80c1" },
+  { text: "Interviews", number: 5, color: "#35b3b2" },
+  { text: "Offers", number: 2, color: "#f6953e" },
+  { text: "Rejected", number: 8, color: "#ef5235" },
 ];
 
 function JobsBoard() {
