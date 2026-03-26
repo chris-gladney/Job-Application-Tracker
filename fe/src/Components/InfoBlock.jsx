@@ -1,5 +1,5 @@
 function InfoBlock({ text, number, color }) {
-  <div className={`info-block info-block-${color}`}>
+  return <div className="info-block">
     <p>{text}</p>
     <p>{number}</p>
   </div>;
