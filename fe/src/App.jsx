@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
@@ -16,6 +15,7 @@ function App() {
         {/* Routes below this point will be protected */}
         <Route path="/add-job" element={<JobForm />} />
         <Route path="/jobs-board" element={<JobsBoard />} />
+        
       </Routes>
     </BrowserRouter>
   );
