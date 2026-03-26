@@ -72,16 +72,18 @@ function SearchJobs() {
     <div className="search-applications">
       <div className="search-bar">
         <Link to="/add-job">
-          <button className="add-job">Add Job</button>
+          <button className="add-job">+ Job</button>
         </Link>
-        <FontAwesomeIcon icon={faMagnifyingGlass} />
-        <input
-          type="text"
-          placeholder="Search jobs..."
-          onChange={(e) => {
-            handleOnChange(e);
-          }}
-        />
+        <div className="search-bar-wrapper">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <input
+            type="text"
+            placeholder="Search jobs..."
+            onChange={(e) => {
+              handleOnChange(e);
+            }}
+          />
+        </div>
       </div>
       <div className="current-applications">
         {filteredJobs.map((job, i) => {
