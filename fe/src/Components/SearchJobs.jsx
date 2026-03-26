@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import JobOverview from "./JobOverview";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const testData = [
   {
@@ -70,6 +71,9 @@ function SearchJobs() {
   return (
     <div className="search-applications">
       <div className="search-bar">
+        <Link to="/add-job">
+          <button className="add-job">Add Job</button>
+        </Link>
         <FontAwesomeIcon icon={faMagnifyingGlass} />
         <input
           type="text"

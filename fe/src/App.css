@@ -239,6 +239,10 @@ h2 {
   justify-content: right;
 }
 
+.search-bar a {
+  margin-left: 0;
+}
+
 .search-bar input {
   height: 30px;
   margin: auto 5px; 
