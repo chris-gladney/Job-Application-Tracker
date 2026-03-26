@@ -137,13 +137,13 @@ form p a {
   height: 100vh;
   display:flex;
   flex-direction: column;
-  width: 85%;
+  width: 65%;
   margin: auto;
 }
 
 h2 {
   color: black;
-  margin: 20px auto 20px 40px;
+  margin: 30px auto;
   font-weight: bold;
 }
 
@@ -152,6 +152,7 @@ h2 {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  justify-content: center;
 }
 
 .info-block {
@@ -178,4 +179,17 @@ h2 {
 .job-number {
   font-size: 30px;
   font-weight: 600;
+}
+
+.jobs-applied-stats {
+  margin: 0 auto;
+  min-width: 1000px;
+  display: flex;
+  flex-direction: row;
+}
+
+.bar-chart-container {
+  width: 60%;
+  min-height: 400px; 
+  margin: 20px 10px 10px 0;
 }
