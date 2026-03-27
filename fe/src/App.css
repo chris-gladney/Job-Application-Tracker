@@ -227,7 +227,7 @@ h2 {
 
 .search-applications {
   margin: 20px;
-  width: 50%;
+  width: 540px;
 }
 
 .search-bar {
@@ -306,6 +306,7 @@ h2 {
   margin: auto;
 }
 
-.job-status a {
-  margin: auto 10px;
+.job-overview svg {
+  margin: auto;
+  cursor: pointer;
 }

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 function JobOverview({ company, status, date }) {
@@ -20,9 +20,10 @@ function JobOverview({ company, status, date }) {
         <p>{status}</p>
       </div>
       <p>{date}</p>
-      <Link to="/">
-        <FontAwesomeIcon icon={faCircleInfo} style={{ color: "black" }} />
-      </Link>
+
+      <FontAwesomeIcon icon={faTrash} style={{ color: "black" }} onClick={() => {
+        console.log("Hello")
+      }} />
     </div>
   );
 }
