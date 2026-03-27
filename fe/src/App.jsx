@@ -15,7 +15,6 @@ function App() {
         {/* Routes below this point will be protected */}
         <Route path="/add-job" element={<JobForm />} />
         <Route path="/jobs-board" element={<JobsBoard />} />
-        
       </Routes>
     </BrowserRouter>
   );
