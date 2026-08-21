@@ -13,6 +13,10 @@
   "dependencies": {
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
+<<<<<<< HEAD
+=======
+    "jsonwebtoken": "^9.0.3",
+>>>>>>> cdc4599845f34fba969e84405b5876dcbc2a4c1a
     "mongoose": "^9.3.2",
     "nodemon": "^3.1.14"
   }
