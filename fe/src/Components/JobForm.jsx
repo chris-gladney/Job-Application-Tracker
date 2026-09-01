@@ -1,4 +1,8 @@
+import { useNavigate } from "react-router-dom";
+
 function JobForm() {
+  const navigate = useNavigate();
+
   return (
     <>
       <form>
@@ -9,7 +13,9 @@ function JobForm() {
         <input type="text" placeholder="Date" pattern="\d{2}/\d{2}/\d{4}" />
         <textarea placeholder="Notes"></textarea>
         <div className="job-settings">
-          <button className="cancel">Cancel</button>
+          <button className="cancel" onClick={() => navigate("/jobs-board")}>
+            Cancel
+          </button>
           <button className="orange-button">Save Job</button>
         </div>
       </form>
