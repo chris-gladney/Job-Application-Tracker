@@ -7,19 +7,22 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import { useState } from "react";
 import { Bar } from "react-chartjs-2";
 import SearchJobs from "./SearchJobs";
 import Banner from "./Banner";
+import { dataOverview, testData } from "../assets/dummyData";
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Tooltip, Legend);
 
-const testData = [
-  { text: "Total Applications", number: 24, color: "#3d80c1" },
-  { text: "Interviews", number: 5, color: "#35b3b2" },
-  { text: "Offers", number: 2, color: "#f6953e" },
-  { text: "Rejected", number: 8, color: "#ef5235" },
-];
+// const testData = [
+//   { text: "Total Applications", number: 24, color: "#3d80c1" },
+//   { text: "Interviews", number: 5, color: "#35b3b2" },
+//   { text: "Offers", number: 2, color: "#f6953e" },
+//   { text: "Rejected", number: 8, color: "#ef5235" },
+// ];
 
+// The data.datasets[0].data will need to be got from an API request
 const data = {
   labels: [
     "Jan",
@@ -50,6 +53,8 @@ const options = {
 };
 
 function JobsBoard() {
+  const [testData, setTestData] = useState(dataOverview)
+
   return (
     <>
       <section className="main-page">
